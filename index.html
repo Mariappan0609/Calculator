@@ -2,11 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" cobutton class="button"tent="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <form class="calculator">
+        <div>
+            <input type="text" class="screen-input">
+        </div>   
+        <div>
+            <button type="button" class="button" onclick="addval('%'); playsound()">%</button>
+            <button type="button" class="button" onclick="clearval(); playsound()">AC</button>
+            <button type="button" class="button" onclick="delval(); playsound()">Del</button>
+            <button type="button" class="button" onclick="addval('+'); playsound()" >+</button>
+        </div>
+        <div>
+            <button type="button" class="button" onclick="addval('1'); playsound()">1</button>
+            <button type="button" class="button" onclick="addval('2'); playsound()">2</button>
+            <button type="button" class="button" onclick="addval('3'); playsound()">3</button>
+            <button type="button" class="button" onclick="addval('-'); playsound()">-</button>
+        </div>
+        <div>
+            <button type="button" class="button" onclick="addval('4'); playsound()">4</button>
+            <button type="button" class="button" onclick="addval('5'); playsound()">5</button>
+            <button type="button" class="button" onclick="addval('6'); playsound()">6</button>
+            <button type="button" class="button" onclick="addval('*'); playsound()">*</button>
+        </div>
+        <div>
+            <button type="button" class="button" onclick="addval('7'); playsound()">7</button>
+            <button type="button" class="button" onclick="addval('8'); playsound()">8</button>
+            <button type="button" class="button" onclick="addval('9'); playsound()">9</button>
+            <button type="button" class="button" onclick="addval('/'); playsound()">/</button>
+        </div>
+        <div>
+            <button type="button" class="button" onclick="addval('00'); playsound()">00</button>
+            <button type="button" class="button" onclick="addval('0'); playsound()">0</button>
+            <button type="button" class="button" onclick="addval('.'); playsound()">.</button>
+            <button type="button" class="eval-button" onclick="solve(); playsound()">=</button>
+        </div>
+  </form>
    <script src="script.js"></script> 
 </body>
 </html>

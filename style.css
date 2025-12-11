@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+}
+.calculator{
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    background-color: #f2f2f2;
+    position: relative;
+    top: 100px;
+    display: grid;
+
+}
+.calculator input{
+    width: 100%;
+    height: 27%;
+    margin: auto;
+    margin-top: 4%;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgb(190, 182, 182);
+    padding: 10px;
+    margin-bottom: 0%;
+}
+.calculator input:focus{
+    outline: none;
+}
+.calculator div {
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top:0%;
+    margin: auto;
+}
+.button{
+    width: 18%;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px gray
+                 8px 8px 15px rgb(243, 235, 235)
+                 4px 4px 10px rgb(248, 241, 241)
+                 0px 0px 0px rgb(255, 255, 255);
+}
+.button:active{
+    box-shadow: inset 2px 2px 5px gray;
+    transform: translateY(5px);
+}
+.button:hover{
+    background-color: #d9d9d9;
+}
+.eval-button{
+    width: 18%;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #1c41c4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px gray
+                 8px 8px 15px rgb(67, 201, 67)
+                 4px 4px 10px rgb(100, 230, 100)
+                 0px 0px 0px rgb(130, 255, 130);
+}
+.eval-button:active{
+    box-shadow: inset 2px 2px 5px gray;
+    transform: translateY(2px);
+}
+.eval-button:hover{
+    background-color: #1542a8;
+}
